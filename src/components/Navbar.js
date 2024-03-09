@@ -44,11 +44,11 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/login'
+                to='/help'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Login
+                Symptoms
               </Link>
             </li>
             <li className='nav-item'>

@@ -17,7 +17,7 @@ export default function SignUp() {
     }
     else{ 
       setTimeout(() => {
-      window.location.href = '/services'; // Delaaaayyy
+      window.location.href = '/login'; // Delaaaayyy
     }, 1000);
     }
 

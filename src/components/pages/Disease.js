@@ -13,7 +13,6 @@ export default function AnalysisResult() {
             {/* Placeholder for model output */}
           </div>
         </div>
-        <button onClick={() => window.location.href='./help'} className="login-button">Things you should know</button> <br></br>
         <button onClick={() => window.location.href='./info'} className="login-button">How can i help myself?</button>
 
       </div>
