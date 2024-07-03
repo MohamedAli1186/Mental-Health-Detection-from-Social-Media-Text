@@ -35,7 +35,11 @@ export default function Login() {
 
   return (
     <div className="container">
+<<<<<<< HEAD
       <h1 className="sers-title">Login</h1>
+=======
+      <h1 className="sers">Login</h1>
+>>>>>>> 97859a541ce86ae9a91b58eaac1ab3bab380acda
       <form onSubmit={handleLogin}>
         <div className="form-group">
           <label htmlFor="username">Username</label>

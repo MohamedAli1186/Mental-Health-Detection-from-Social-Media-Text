@@ -13,7 +13,18 @@ export default function SignUp() {
     const password = form.password.value.trim();
 
     if (!username || !email || !password) {
+<<<<<<< HEAD
       setToastMessage("Please fill in all fields.");
+=======
+      setToastMessage('Please fill in all fields.');
+      return;
+    }
+    else{ 
+      setTimeout(() => {
+      window.location.href = '/login'; // Delaaaayyy
+    }, 1000);
+    }
+>>>>>>> 97859a541ce86ae9a91b58eaac1ab3bab380acda
 
       return;
     } else {

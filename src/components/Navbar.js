@@ -41,9 +41,19 @@ function Navbar() {
                 Home
               </Link>
             </li>
+<<<<<<< HEAD
             <li className="nav-item">
               <Link to="/login" className="nav-links" onClick={closeMobileMenu}>
                 Login
+=======
+            <li className='nav-item'>
+              <Link
+                to='/help'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Symptoms
+>>>>>>> 97859a541ce86ae9a91b58eaac1ab3bab380acda
               </Link>
             </li>
             <li className="nav-item">

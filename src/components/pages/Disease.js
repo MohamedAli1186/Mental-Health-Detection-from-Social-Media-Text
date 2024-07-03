@@ -15,6 +15,7 @@ export default function AnalysisResult() {
           <p className="disorder-label">Your disorder is:</p>
           <div className="model-output">{data}</div>
         </div>
+<<<<<<< HEAD
         <button
           onClick={() => (window.location.href = "./help")}
           className="login-button"
@@ -28,6 +29,10 @@ export default function AnalysisResult() {
         >
           How can i help myself?
         </button>
+=======
+        <button onClick={() => window.location.href='./info'} className="login-button">How can i help myself?</button>
+
+>>>>>>> 97859a541ce86ae9a91b58eaac1ab3bab380acda
       </div>
     </body>
   );

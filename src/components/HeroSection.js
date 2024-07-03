@@ -19,6 +19,14 @@ function HeroSection() {
         >
           GET STARTED
         </Button>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+          buttonColor= '#03d9a9'
+        >
+          LOGIN
+        </Button>
         
       </div>
     </div>

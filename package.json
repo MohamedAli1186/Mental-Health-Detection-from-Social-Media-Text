@@ -6,7 +6,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "js-cookie": "^3.0.5",
+=======
+    "axios": "^1.6.7",
+>>>>>>> 97859a541ce86ae9a91b58eaac1ab3bab380acda
     "lodash": "^4.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
