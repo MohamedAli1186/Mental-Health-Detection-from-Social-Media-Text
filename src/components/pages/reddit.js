@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 
 export default function WriteSomeTweets() {
   const [tweetInput, setTweetInput] = useState("");
+  const [subreddit, setSubreddit] = useState("");
   const [toastMessage, setToastMessage] = useState("");
 
   const analyzeTweet = async () => {
@@ -12,9 +13,10 @@ export default function WriteSomeTweets() {
     if (tweetInput.trim() === "") {
       setToastMessage("Please enter your tweet.");
     } else {
-      const apiUrl = "http://127.0.0.1:5000/predict?id=" + cookieValue;
+      const apiUrl = "http://127.0.0.1:5000/reddit?id=" + cookieValue;
       const formData = new FormData();
-      formData.append("text", tweetInput);
+      formData.append("user", tweetInput);
+      formData.append("subreddit", subreddit);
 
       const requestOptions = {
         method: "POST",
@@ -28,7 +30,7 @@ export default function WriteSomeTweets() {
 
         if (response.ok) {
           console.log("Prediction:", data);
-          window.location.href = "/disease?data=" + data.predicted_disorder; // Example redirect on success
+          window.location.href = "/disease?data=" + data; // Example redirect on success
         } else {
           setToastMessage("Failed to analyze the tweet. Please try again.");
         }
@@ -41,20 +43,28 @@ export default function WriteSomeTweets() {
 
   return (
     <body>
-      <div class="services-title">Services</div>
+      <div class="services-title">Reddit</div>
       <div className="container">
-        <h1>Write Some Texts</h1>
+        <h1>Reddit Username & Subreddit</h1>
         <div className="input-container">
           <input
             type="text"
             value={tweetInput}
             onChange={(e) => setTweetInput(e.target.value)}
-            placeholder="What's on your mind..."
+            placeholder="Enter your Reddit Username"
+          />
+        </div>
+        <div className="input-container">
+          <input
+            type="text"
+            value={subreddit}
+            onChange={(e) => setSubreddit(e.target.value)}
+            placeholder="Enter subreddit"
           />
           <div className="toast">{toastMessage}</div>
         </div>
         <button className="button" onClick={analyzeTweet}>
-          Analysis
+          fetch & analyze
         </button>
       </div>
     </body>

@@ -33,11 +33,12 @@ label {
 }
 .ser {
   width: 100%;
-  background: url(D:\FCIS\IS\GP\web-app\web-app\public\images\mixed-light-background.jpg) no-repeat center center fixed; 
+  background: url(../../../public/images/mixed-light-background.jpg) no-repeat
+    center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
   color: #000;
   font-size: 100px;
   text-align: center;
@@ -57,7 +58,7 @@ input[type="password"] {
 
 button[type="submit"],
 button.login-button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 20px 40px;
